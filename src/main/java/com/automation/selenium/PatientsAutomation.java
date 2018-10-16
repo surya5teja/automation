@@ -28,8 +28,8 @@ public class PatientsAutomation {
 
 	public void login(Patient patient) throws IOException {
 		driver.get("https://test.salesforce.com");
-		driver.findElement(By.name("username")).sendKeys(System.getenv("sfUsrname"));
-		driver.findElement(By.cssSelector("input[type='password']")).sendKeys(System.getenv("sfPwd"));
+		driver.findElement(By.name("username")).sendKeys("");
+		driver.findElement(By.cssSelector("input[type='password']")).sendKeys("");
 		driver.findElement(By.cssSelector("input[id='Login']")).click();
 		driver.manage().window().maximize();
 		WebDriverWait wait = new WebDriverWait(driver, 20);
