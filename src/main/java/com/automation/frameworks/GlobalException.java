@@ -11,6 +11,11 @@ import java.util.List;
  */
 public class GlobalException extends RuntimeException {
 
+	/**
+	 *
+	 */
+	private static final long serialVersionUID = 1L;
+
 	private String code;
 
 	private String message;
